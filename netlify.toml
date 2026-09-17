@@ -1,0 +1,4 @@
+# The site lives in the tw-medical/ folder, not the repo root.
+[build]
+  publish = "tw-medical"
+  command = ""
