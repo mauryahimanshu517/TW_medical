@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Wishlist — TW Medical</title>
+  <meta name="description" content="Products you saved for later at TW Medical.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="wishlist">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="page-head">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Wishlist</span>
+      </nav>
+      <div class="section-head" style="margin-bottom:0">
+        <div>
+          <h1 class="page-title">My Wishlist <span class="muted" id="wishCountTitle"></span></h1>
+          <p class="page-sub">Products you’ve saved for later</p>
+        </div>
+        <button class="btn btn-primary btn-sm" id="moveAll" hidden><i class="fa-solid fa-cart-plus"></i> Move all to cart</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="wishGrid" style="margin-top:22px"></div>
+
+    <section class="section" id="wishReco">
+      <div class="section-head">
+        <div>
+          <h2>Top Rated Picks</h2>
+          <p>Tap the heart to save products you love</p>
+        </div>
+        <a class="link-more" href="products.html?sort=rating">View all <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="rail" id="wishRecoRail"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/wishlist.js"></script>
+</body>
+</html>

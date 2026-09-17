@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products — TW Medical</title>
+  <meta name="description" content="Browse medicines, medical devices, diabetes care and surgical supplies at TW Medical.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="products">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="page-head">
+      <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+      <h1 class="page-title" id="pageTitle">All Products</h1>
+      <p class="page-sub" id="pageSub"></p>
+    </div>
+
+    <div class="listing-extra" id="listingExtra" hidden></div>
+
+    <div class="listing">
+      <div class="drawer-backdrop" id="filterBackdrop" hidden></div>
+      <aside class="filters" id="filters" aria-label="Filters">
+        <div class="filters-head">
+          <h3><i class="fa-solid fa-sliders"></i> Filters</h3>
+          <div>
+            <button id="clearFilters">Clear all</button>
+            <button class="icon-btn close-filters" id="closeFilters" aria-label="Close filters"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+        <div id="filterGroups"></div>
+        <div class="filters-apply"><button class="btn btn-primary btn-block" id="applyFilters">Show results</button></div>
+      </aside>
+
+      <section aria-labelledby="pageTitle">
+        <div class="toolbar">
+          <p class="count" id="resultCount"></p>
+          <div class="toolbar-right">
+            <button class="btn btn-outline btn-sm filter-btn" id="openFilters"><i class="fa-solid fa-sliders"></i> Filters</button>
+            <label class="sr-only" for="sortSelect">Sort by</label>
+            <select class="select" id="sortSelect">
+              <option value="relevance">Sort: Relevance</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Customer Rating</option>
+              <option value="discount">Biggest Discount</option>
+              <option value="popular">Most Reviewed</option>
+            </select>
+          </div>
+        </div>
+        <div class="active-filters" id="activeFilters"></div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/listing.js"></script>
+</body>
+</html>

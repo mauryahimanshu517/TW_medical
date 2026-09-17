@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TW Medical — Genuine Medicines, Medical Devices & Surgical Supplies</title>
+  <meta name="description" content="TW Medical — shop genuine medicines, diabetes care, BP monitors, surgical supplies and first aid products online with fast delivery across India.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main>
+    <h1 class="sr-only">TW Medical — Online medical store</h1>
+
+    <!-- Hero carousel -->
+    <section class="container hero-wrap" aria-roledescription="carousel" aria-label="Featured offers">
+      <div class="hero" id="hero">
+        <div class="hero-track" id="heroTrack"></div>
+        <button class="hero-arrow prev" id="heroPrev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="hero-arrow next" id="heroNext" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="hero-dots" id="heroDots" role="tablist" aria-label="Choose slide"></div>
+        <div class="hero-progress"><span id="heroProgress"></span></div>
+      </div>
+    </section>
+
+    <!-- Service strip -->
+    <section class="container">
+      <ul class="service-strip reveal">
+        <li><span class="svc-ico"><i class="fa-solid fa-shield-heart"></i></span><div><b>100% Genuine</b><small>Sourced from licensed distributors</small></div></li>
+        <li><span class="svc-ico"><i class="fa-solid fa-truck-fast"></i></span><div><b>PAN India Delivery</b><small>Across 19,000+ pincodes</small></div></li>
+        <li><span class="svc-ico"><i class="fa-solid fa-rotate-left"></i></span><div><b>7-Day Returns</b><small>Hassle-free return policy</small></div></li>
+        <li><span class="svc-ico"><i class="fa-solid fa-lock"></i></span><div><b>Secure Checkout</b><small>COD & UPI available</small></div></li>
+      </ul>
+    </section>
+
+    <!-- Categories -->
+    <section class="section container" id="categories">
+      <div class="section-head">
+        <div>
+          <h2>Shop by Category</h2>
+          <p>Everything you need for everyday health and clinical care</p>
+        </div>
+        <a class="link-more" href="products.html?view=categories">All Categories <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </section>
+
+    <!-- Featured brands -->
+    <section class="section brands-section">
+      <div class="container section-head">
+        <div>
+          <h2>Featured Brands</h2>
+          <p>Trusted names in healthcare, all in one place</p>
+        </div>
+        <a class="link-more" href="products.html?view=brands">View All Brands <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="marquee" id="brandMarquee" aria-label="Featured brands">
+        <div class="marquee-track" id="brandTrack"></div>
+      </div>
+    </section>
+
+    <!-- Recently viewed -->
+    <section class="section container" id="recent">
+      <div class="section-head">
+        <div>
+          <h2>Recently Viewed</h2>
+          <p>Pick up where you left off</p>
+        </div>
+        <button class="link-more" id="clearRecent" hidden><i class="fa-regular fa-trash-can"></i> Clear history</button>
+      </div>
+      <div class="rail" id="recentRail"></div>
+    </section>
+
+    <!-- Top rated suppliers -->
+    <section class="section container" id="top-rated">
+      <div class="section-head">
+        <div>
+          <h2>Top Rated Suppliers This Week</h2>
+          <p>Verified sellers with the highest customer ratings</p>
+        </div>
+        <a class="link-more" href="products.html?sort=rating">See all <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="chips seller-tabs" id="sellerTabs" role="tablist"></div>
+      <div class="product-grid" id="topRatedGrid"></div>
+    </section>
+
+    <!-- Promo banners -->
+    <section class="section container">
+      <div class="promo-duo">
+        <a class="promo promo-diabetes reveal" href="products.html?category=diabetes-care">
+          <div>
+            <span class="eyebrow">Diabetes Care</span>
+            <h3>Up to 50% off on glucometers & strips</h3>
+            <span class="btn btn-light btn-sm">Shop Diabetes Care <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+          <img id="promoImg1" alt="" width="180" height="180">
+        </a>
+        <a class="promo promo-doctor reveal" href="product.html?id=137">
+          <div>
+            <span class="eyebrow">Doctor Consultation</span>
+            <h3>Talk to a verified doctor in 15 minutes</h3>
+            <span class="btn btn-light btn-sm">Consult now at ₹349 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+          <img id="promoImg2" alt="" width="180" height="180">
+        </a>
+      </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section class="section container" id="bestsellers">
+      <div class="section-head">
+        <div>
+          <h2>Bestselling Medical Devices</h2>
+          <p>Most loved by families and clinics</p>
+        </div>
+        <a class="link-more" href="products.html?category=medical-devices">View all <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="rail" id="bestRail"></div>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about">
+      <div class="about reveal">
+        <div class="about-copy">
+          <span class="eyebrow">About TW Medical</span>
+          <h2>Healthcare you can trust, delivered with care</h2>
+          <p>TW Medical partners with licensed distributors and leading manufacturers to bring genuine medicines, diagnostic devices and surgical supplies to homes, clinics and hospitals. Every order is checked by qualified pharmacists before dispatch.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-circle-check"></i> Pharmacist-verified orders</li>
+            <li><i class="fa-solid fa-circle-check"></i> Temperature-safe packaging</li>
+            <li><i class="fa-solid fa-circle-check"></i> GST invoice on every order</li>
+            <li><i class="fa-solid fa-circle-check"></i> Bulk pricing for clinics</li>
+          </ul>
+        </div>
+        <div class="stats">
+          <div><b>2L+</b><span>Happy customers</span></div>
+          <div><b>5,000+</b><span>Products</span></div>
+          <div><b>19K+</b><span>Pincodes served</span></div>
+          <div><b>4.7★</b><span>Average rating</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Help & Support -->
+    <section class="section container" id="support">
+      <div class="section-head">
+        <div>
+          <h2>Help Center</h2>
+          <p>Answers to common questions</p>
+        </div>
+        <a class="link-more" href="#" data-whatsapp><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
+      </div>
+      <div class="faq">
+        <details id="faq-shipping" open>
+          <summary>How long does delivery take? <i class="fa-solid fa-chevron-down"></i></summary>
+          <p>Standard delivery takes 2–5 business days depending on your pincode. Express delivery (1–2 days) is available in major cities. Orders above ₹499 ship free.</p>
+        </details>
+        <details id="faq-returns">
+          <summary>What is your return policy? <i class="fa-solid fa-chevron-down"></i></summary>
+          <p>Unopened products can be returned within 7 days of delivery. Medicines and opened hygiene products are non-returnable unless damaged or incorrect.</p>
+        </details>
+        <details>
+          <summary>Are all products genuine? <i class="fa-solid fa-chevron-down"></i></summary>
+          <p>Yes. We source directly from manufacturers and licensed distributors, and every batch is checked for expiry and authenticity.</p>
+        </details>
+        <details>
+          <summary>Do I need a prescription? <i class="fa-solid fa-chevron-down"></i></summary>
+          <p>Prescription (Rx) medicines require a valid prescription, which you can share at checkout or on WhatsApp. Devices and supplies do not need one.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

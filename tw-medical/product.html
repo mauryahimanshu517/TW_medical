@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details — TW Medical</title>
+  <meta name="description" content="Product details, pricing, delivery and specifications at TW Medical.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="product">
+  <div id="site-header"></div>
+
+  <main class="container" id="productRoot">
+    <div class="page-head">
+      <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+    </div>
+    <div id="productView"></div>
+
+    <section class="section" id="similarSection" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Similar Products</h2>
+          <p>Customers also viewed these items</p>
+        </div>
+        <a class="link-more" id="similarLink" href="products.html">View all <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="rail" id="similarRail"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>
